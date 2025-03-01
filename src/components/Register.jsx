@@ -9,8 +9,6 @@ const Register = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-purple-200 p-3">
       <div className="bg-indigo-950 p-6 rounded-lg shadow-md h-auto w-full max-w-sm md:max-w-2xl flex flex-col md:flex-row md:items-center md:gap-6">
-
-        {/* Left Side - Image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
             className="w-full h-60 md:h-100 object-cover rounded-lg"
@@ -19,7 +17,6 @@ const Register = () => {
           />
         </div>
 
-        {/* Right Side - Form Section */}
         <div className="text-white w-full md:w-1/2">
           <h1 className="text-2xl py-2 font-semibold mb-4 md:text-left">
             {isLogin ? "Welcome Back!" : "Create an account"}
@@ -34,7 +31,6 @@ const Register = () => {
             </span>
           </p>
 
-          {/* Form */}
           <form className="mt-4">
             {!isLogin && (
               <div className="mb-4">
@@ -60,7 +56,6 @@ const Register = () => {
               />
             </div>
 
-            {/* Terms and Conditions Checkbox */}
             {!isLogin && (
               <div className="flex items-center gap-2 mb-4">
                 <input
@@ -79,7 +74,6 @@ const Register = () => {
               </div>
             )}
 
-            {/* Submit Button */}
             <button
               className={`w-full py-2 mt-2 rounded-lg transition duration-300 ${
                 isLogin || isChecked
@@ -92,7 +86,6 @@ const Register = () => {
             </button>
           </form>
 
-          {/* Social Login */}
           <div className="mt-4">
             <p className="text-center text-sm">Or Register with</p>
             <div className="flex justify-center gap-4 mt-2">
